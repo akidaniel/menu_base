@@ -65,27 +65,27 @@ cursor: pointer;
 background-size:contain;
 margin: 0 15px;
 }
-.HOME {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_fcbk.png)}
+.HOME {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_fcbk.png)}
 
 .BACK {background-image: url(https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/BT_X2.svg)}
 
 .FCBK {
-background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_fcbk.png);
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_fcbk.png);
 }
 
 .TWITTER {
-background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_twit.png);
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_twit.png);
 }
 
-.INSTA {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_insta.png)
+.INSTA {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_insta.png)
 }
 
 .MAIL {
-background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_mail.png);
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_mail.png);
 }
 
 
-.WHATS {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_whatsapp.png);
+.WHATS {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_whatsapp.png);
 }
 /*BOTON TEXT ME*/
 .text-me {
@@ -109,7 +109,7 @@ background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_mail.
 	z-index: 1200;
 	right: 1.25rem;
 	bottom: 0.5rem;
-	background: url(https://akidaniel.github.io/menucatalina/imagenes/bt_top.png) no-repeat center 43%;
+	background: url(https://akidaniel.github.io/menu_base/imagenes/bt_top.png) no-repeat center 43%;
 	background-size: contain;
 }
 
@@ -262,8 +262,8 @@ z-index:222;}
 	z-index: 999;
 	cursor: pointer;
 }
-.platos {background: url(https://akidaniel.github.io/menucatalina/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
-.vinos {background: url(https://akidaniel.github.io/menucatalina/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
+.platos {background: url(https://akidaniel.github.io/menu_base/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
+.vinos {background: url(https://akidaniel.github.io/menu_base/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
 
 .expandish {
 background-color:#ffffff;
