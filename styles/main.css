@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+/*background: transparent;*/
+border: 0;
+vertical-align: top;
+list-style:none;
+list-style-type: none;
+text-align:left;
+}
+:focus {
+	outline: 0;
+}
+
+
+.pagina {box-sizing:border-box;
+padding:0;
+background:url(https://images.assetsdelivery.com/compings_v2/ihor_seamless/ihor_seamless1502/ihor_seamless150200211.jpg)}
+ 
+.wrapper {overflow-x:hidden; position: relative; padding: 0 3px;}
+
+.CENTER {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*TEXTOS*/
+
+.SUBTITULO{font-size:3rem;
+margin:3rem 0 1rem 0;
+text-align:center;
+line-height: 3rem;}
+
+
+/*FIN TEXTOS*/
+
+
+.SOCIAL {
+position:absolute;
+top:0;
+left: 0;
+display: flex;
+justify-content: center;
+z-index: 9500;
+width:100%;}
+
+/*BOTON SOCIAL*/
+.FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS {
+display:block;
+text-indent:-625rem;
+width:3.125rem;
+height:3.125rem;
+background-repeat:no-repeat;
+cursor: pointer;
+background-size:contain;
+margin: 0 15px;
+}
+.HOME {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_fcbk.png)}
+
+.BACK {background-image: url(https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/BT_X2.svg)}
+
+.FCBK {
+background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_fcbk.png);
+}
+
+.TWITTER {
+background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_twit.png);
+}
+
+.INSTA {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_insta.png)
+}
+
+.MAIL {
+background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_mail.png);
+}
+
+
+.WHATS {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/bt_whatsapp.png);
+}
+/*BOTON TEXT ME*/
+.text-me {
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
+	text-indent: -9999px;
+	position: absolute;
+	z-index: 999;
+	right: 1.25rem;
+	top: 1.8rem;
+	background: url(https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/BT_TEXT.svg) no-repeat center 43%;
+}
+/*BOTON BACK TO TOP*/
+.back-to-top {
+	display: none;
+	width: 3.75rem;
+	height: 3.75rem;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 1200;
+	right: 1.25rem;
+	bottom: 0.5rem;
+	background: url(https://akidaniel.github.io/menucatalina/imagenes/bt_top.png) no-repeat center 43%;
+	background-size: contain;
+}
+
+
+.MAIL:hover, .TWITTER:hover, .FCBK:hover, .INSTA:hover, .BACK:hover, .HOME:hover, .pre:hover, .post:hover, .WHATS:hover {
+-moz-filter: hue-rotate(0deg) saturate(1) brightness(2.5);
+-o-filter: hue-rotate(0deg) saturate(1) brightness(2.5);
+-ms-filter: hue-rotate(0deg) saturate(1) brightness(2.5);
+-webkit-filter:hue-rotate(0deg) saturate(1) brightness(2.5);
+filter:hue-rotate(0deg) saturate(1) brightness(2.5);
+}
+
+
+/*MENU*/
+
+
+.flexbox {
+display: flex;
+
+margin: 0 auto;
+}
+
+.lista {
+justify-content: space-evenly;
+} 
+.preciolista {
+  flex: 0 0 80px;
+  text-align:right;
+}
+
+.languecontainer {position:absolute;
+top:0;
+display: flex;
+justify-content: center;
+z-index: 9500;
+margin:2rem 0 1rem 0;
+width:100%;}
+
+.menuitemcontainer, .cartadevinos {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px; }
+.menuitem { font-family: 'Berkshire Swash', cursive;
+ font-size: 24px; color: #803a30; text-align: center; padding: 8px 0 10px 0; border-bottom: 2px solid #afafaf; margin: 0 auto; 
+}
+
+	
+.cartadevinos {display:none;}
+.bebidas  {marging: 0rem!important; margin-top:-2.5rem!important;}
+
+.topimage {background-position: center center; -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius:10px; -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius:10px;}
+.principal {
+background: ;
+flex: 1;
+font-family: 'Yantramanav', sans-serif;
+font-size:18px;
+  padding: 5px 5px 2px 5px; border-bottom: 2px dotted #ccc;
+  color:#454545;
+}
+
+.dish-2 {text-align: center; margin-top: 15px; width:49%; z-index:10;}
+.dish-3 {text-align: center; margin-top: 5px; width:32%; z-index:10;}
+.dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%;}
+.descr {font-family: 'Yantramanav', sans-serif;
+font-size:18px; text-align:center; margin: 10px 3px 0; line-height: 125%;
+
+}
+
+.menuitem.plato {font-size:20px; border-bottom: none; line-height: 100%; padding:0;}
+.price {position: relative;
+ font-family: 'Yantramanav', sans-serif;
+ font-size: 18px; -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    bottom: 15px;
+    left: 50%;
+ /*display: block;
+    width: 50px;*/
+    text-align: unset;}
+	
+.expandish .price {display:unset; width:auto; }
+	
+.dishphoto {text-align:center}
+
+.pricex3 {left: 30%; margin: 0 auto;}
+.address {font-family: 'Yantramanav', sans-serif; font-size: 14px; text-align: center; margin: 15px auto}
+.lastline {border:none; text-align:center; margin-bottom: 0.5rem;}
+
+.dishnumber {position: relative;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 4px 6px;
+   background-color: white;  bottom: 15px;
+    font-weight: bold;
+    color: black;
+    left: 40px;
+}
+.dishnumber::after {position:relative; 
+		  content: "\2617"; color:blue; margin-left: -1.5em; z-index:-9999; display:none;
+}
+.expandish .dishnumber {
+    left: 30%;
+    }
+	
+
+/*LANGUE*/
+.BOTONERA, .cambiocontenido {display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+justify-content: center;
+width:100%;
+position:relative;
+}
+.cambiocontenido {position: fixed;
+    bottom: 0.5rem;
+    z-index: 990; justify-content: left;}
+#LES {display:block;}
+.LUK, .LFR {display:none;}
+.LES {display:block;}
+
+.menu_lang, .menu_contenido {display: none;}
+.menu_lang:checked ~ label .BUTTON {color: #c2c;}
+.menu_contenido:checked ~ label .BUTTON {color: #c2c;}
+
+.UK, .ES, .FR {
+display:block;
+text-indent:-625rem;
+width:4rem;
+height:4rem;
+background-repeat:no-repeat;
+background-size:contain;
+cursor: pointer;
+margin: 0 2rem;
+z-index:222;}
+.UK {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/uk.png);}
+.ES {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/spain.png);}
+.FR {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/france.png);}
+
+.platos, .vinos {display: block;
+	width: 4rem;
+	height: 4rem;
+	text-indent: -9999px;
+	/**position: fixed;**/
+	z-index: 999;
+	cursor: pointer;
+}
+.platos {background: url(https://akidaniel.github.io/menucatalina/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
+.vinos {background: url(https://akidaniel.github.io/menucatalina/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
+
+.expandish {
+background-color:#ffffff;
+position: absolute;
+min-width: 580px;
+max-width: 580px;
+/**-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;**/
+border:solid 2px #B5B5B5;
+cursor: zoom-out;
+margin: 0;
+z-index: 12;
+}
+
+.expandish img {width: 300px; padding: 15px 0 0 0;}
+
+.expandish .price {left: 60%;
+    display: block;
+    width: 60px;}
+.expandish .pricex3 {margin:0;}
+
+.expandish .dishphoto {margin: 15px 0 -10px;}
+
+
+.TITLE {-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+@media only screen and (max-width: 900px) {
+
+.SUBTITULO {margin-top: 4rem;}
+.menuitemcontainer { -moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; }
+.UK, .ES, .FR {margin: 0 1rem; width: 3rem; height:5rem;}
+.BOTONERA {top: 4.15rem;}
+.expandish {min-width: 98%; padding-bottom: 30px;}
+/**FONDO DE COLOR**/
+.layer {background-color: rgba(134, 65, 56, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.show {display:none;}
+/**FIN FONDO DE COLOR**/
+
+.expandish .dishnumber, .dishnumber {
+    left: 10%;
+    }
+	
+.price {left:30%}
+.dish-3 .dishnumber {left:0;}
+.pricex3 {left:5%;}
+.expandish .dishnumber {left: 20%; color: #ffffff; background-color: #000000;}
+.bebidas  {marging: 0rem!important; margin-top:0rem;}
+.TITLE {-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+}
+
+@media only screen and (min-width:901px) {
+
+
+.SOCIAL {
+top:172px;
+margin-right: 5px;
+width:60px;
+left:85%;
+right: 0;
+margin-left: 0px;
+display: block;
+}
+.FCBK, .TWITTER, .GPLUS, .MAIL, .HOME, .BACK, .INSTA, .WHATS {
+margin: 0 0 16px;
+}
+
+}
+
+
+/**
+
+@media only screen and (max-width: 640px)  {
+body[yahoo] .ANCHO {width:440px!important; padding:0px;!important; }
+body[yahoo] .CUADRO {width:220px!important; padding:0px;!important; }
+}
+@media only screen and (max-width: 540px) {
+body[yahoo] .ANCHO {width:300px!important; padding:0;}
+body[yahoo] .CUADRO {width:140px!important; padding:0px;}
