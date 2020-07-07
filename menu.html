@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name = "format-detection" content = "telephone=no" />
+<meta name = "format-detection" content = "date=no" />
+<meta name = "format-detection" content = "address=no" />
+<meta name="viewport" content="width=device-width, initial scale=1.0"/>
+<meta charset="utf-8" />
+<meta property="og:title" content="Menús interactivos accesibles desde código QR" />
+<meta property="og:url" content="https://akidaniel.github.io/menucatalina/menu" />
+<meta property="og:image" content="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/anis/MODELOS.gif"/>
+<meta property="og:description" content="Diseño de menú y lista de precios interactivos accesibles desde códigos QR" />
+  
+<link rel="apple-touch-icon" sizes="57x57" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-57x57.png">
+
+<link rel="apple-touch-icon" sizes="60x60" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-60x60.png">
+
+<link rel="apple-touch-icon" sizes="72x72" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-72x72.png">
+
+<link rel="apple-touch-icon" sizes="76x76" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-76x76.png">
+
+<link rel="apple-touch-icon" sizes="114x114" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-114x114.png">
+
+<link rel="apple-touch-icon" sizes="120x120" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-120x120.png">
+
+<link rel="apple-touch-icon" sizes="144x144" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-144x144.png">
+
+<link rel="apple-touch-icon" sizes="152x152" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-152x152.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/apple-icon-180x180.png">
+
+<link rel="icon" type="image/png" sizes="192x192"  href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/android-icon-192x192.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/favicon-32x32.png">
+
+<link rel="icon" type="image/png" sizes="96x96" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/favicon-96x96.png">
+
+<link rel="icon" type="image/png" sizes="16x16" href="https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/favicon-16x16.png">
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/fb17da27d8.js" crossorigin="anonymous"></script>
+
+
+
+<link rel="icon" href="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/botones/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/botones/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/botones/favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/botones/favicon-300x300.png" />
+<link type="text/css" rel="stylesheet" href="https://akidaniel.github.io/menucatalina/styles/main.css"/>
+
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;900&display=swap" rel="stylesheet">
+
+<title>Menú HTML</title>
+
+<script>
+$(document).ready(function() {
+
+var display = function(block_name) {
+  $('.SUBTITULO, .menuitem, .descr, .listado').css('display', 'none');
+  $('#' + block_name).css('display', 'block');
+  $('.' + block_name).css('display', 'block');
+}
+
+$('.UK').on('click', function() {
+  display('LUK', $(this));
+});
+
+$('.ES').on('click', function() {
+  display('LES', $(this));
+});
+
+$('.FR').on('click', function() {
+  display('LFR', $(this));
+});
+});
+</script>
+
+<script>
+$(document).ready(function() {
+
+var display = function(block_name) {
+  $('.menuitemcontainer, .cartadevinos').css('display', 'none');
+  $('#' + block_name).css('display', 'block');
+  $('.' + block_name).css('display', 'block');
+}
+
+$('.platos').on('click', function() {
+  display('menuitemcontainer', $(this));
+});
+
+$('.vinos').on('click', function() {
+  display('cartadevinos', $(this));
+});
+
+});
+</script>
+<script>
+$(document).ready(function() {
+$('.dish-2, .dish-3').click(function() {
+  $(this).toggleClass('expandish');
+    $(this).siblings(".show").toggle();
+	    $('.show').css('z-index', '11')
+
+
+});
+
+/*$('img').bind('contextmenu', function(e) {
+    return false;
+}); */
+
+$('.dish-2, .dish-3').mouseleave(function() {
+  $(this).removeClass('expandish');
+	    $('.show').css('z-index', '0');
+			    $('.show').css('display', 'none');
+
+});
+
+
+});
+
+</script>
+
+<style>
+
+
+.expandish .price {
+    display: unset;}
+@media only screen and (max-width: 900px) {
+
+
+
+}
+</style>
+
+</head >
+<body class="pagina" style="overflow:visible" yahoo="fix">
+
+<div class="wrapper">
+
+<div class="SOCIAL">
+<!--<a class="BACK" onClick="history.go(-1);return true;"></a>-->
+
+<a class="FCBK" rel="img_src" href=""
+
+    onclick="popUp=window.open(
+        'https://www.facebook.com/sharer.php?u=https://akidaniel.github.io/menucatalina/menu_lang',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false"  title="Compartir en Facebook">
+    <!--<i class="visuallyhidden">share on facebook</i>-->
+</a>
+
+  <a class="TWITTER" rel="nofollow"
+    href="https://twitter.com/"
+    onclick="popUp=window.open(
+        'https://twitter.com/intent/tweet?text=\https://akidaniel.github.io/menucatalina/menu_lang',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false" title="Compartir en Twitter">
+   <!-- <i class="visuallyhidden">share on twitter</i>-->
+</a>
+
+
+<a class="WHATS" rel="nofollow"
+    onclick="popUp=window.open(
+        'whatsapp://send?text=https://akidaniel.github.io/menucatalina/menu_lang',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false" title="Compartir en WhatsApp"
+    data-action="share/whatsapp/share">
+    <!--<i class="visuallyhidden">share on google plus</i>-->
+</a>
+
+<a class="MAIL" rel="nofollow"
+    href="mailto:?subject=Menús online desde código QR &body=https://akidaniel.github.io/menucatalina/menu_lang" title="Enviar por mail">
+    <!--<i class="visuallyhidden">share via email</i>-->
+</a>
+</div>
+
+
+<!--CUADRO LANGUES-->
+
+<div class="BOTONERA">
+<input type="checkbox" id="menu_lang_id" class="menu_lang">
+<!--<label for="menu_lang_id" class="" onclick="if(document.getElementById('menu_lang_id').value) document.getElementById('menu_share_id').checked = false; if(document.getElementById('menu_lang_id').value) document.getElementById('menu_buy_id').checked = false;">-->
+</label>
+<a class="ES" href="#">
+</a>
+<a class="UK" href="#">
+</a>
+<a class="FR" href="#">
+</a>
+</div>
+
+<div class="cambiocontenido">
+<input type="checkbox" id="contenido" class="menu_contenido">
+<!--<label for="contenido" class="" onclick="if(document.getElementById('contenido').value) document.getElementById('menu_share_id').checked = false; if(document.getElementById('contenido').value) document.getElementById('menu_buy_id').checked = false;">-->
+</label>
+<a class="platos" href="#">
+</a>
+<a class="vinos" href="#">
+</a>
+
+</div>
+
+<div class="menudecomidas">
+<div class="menuitemcontainer TITLE">
+<header id="LES" class="SUBTITULO comidas LES" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Menú Restaurant</header>
+<header id="LUK" class="SUBTITULO comidas LUK" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Restaurant Menu</header>
+<header id="LFR" class="SUBTITULO comidas LFR" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Menu du Restaurant</header>
+</div>
+<!--CUADRO ENTRANTES-->
+<div class="menuitemcontainer">
+
+<div class="menuitem topimage LES LUK LFR" style="background-image: url(https://akidaniel.github.io/menucatalina/imagenes/resto.jpg); height:250px; "></div>
+
+<div class="menuitem LES">Entrantes <i class="fas fa-pepper-hot" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LUK">Appetizers <i class="fas fa-pepper-hot" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LFR">Entrées <i class="fas fa-pepper-hot" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+
+<div class="flexbox lista">
+<div class="layer show"></div>
+
+<div class="dish-2">
+<div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish01.png" alt="Sopa" border="0" ></div>
+<div><span class="dishnumber">01</span><span class="price">6,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Sopa de pescado</p>
+<p class="menuitem plato LUK">Fish soup</p>
+<p class="menuitem plato LFR">Soupe de poisson</p>
+<p class="descr LES">Sopa de variedad de pescados, mariscos, verduras</p>
+<p class="descr LUK">Soup of fish, seafood, vegetables</p>
+<p class="descr LFR">Soupe de poisson, fruits de mer, légumes</p>
+</div>
+
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish13.png" alt="Gambas" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">02</span><span class="price">7,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Gambas al ajillo</p>
+<p class="menuitem plato LUK">Garlic prawns</p>
+<p class="menuitem plato LFR">Crevettes à l’ail</p>
+<p class="descr LES">Gambas peladas, ajo y aceite de oliva</p>
+<p class="descr LUK">Peeled prawns, garlic and olive oil</p>
+<p class="descr LFR">Crevettes décortiquées, ail et huile d'olive</p>
+</div> 
+
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish03.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">03</span><span class="price">5,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada de cangrejo</p>
+<p class="menuitem plato LUK">Crab Salad</p>
+<p class="menuitem plato LFR">Salade de crabe</p>
+  <p class="descr LES">Surimi, zanahoria, maiz, huevo, cebolla, mayonesa</p>
+<p class="descr LUK">Surimi, carrot, corn, egg, onion, mayonnaise</p>
+<p class="descr LFR">Surimi, carotte, maïs, œuf, oignon, mayonnaise</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish04.png" alt="Caprese" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">04</span><span class="price">5,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada Caprese</p>
+<p class="menuitem plato LUK">Caprese Salad</p>
+<p class="menuitem plato LFR">Caprese Salad</p>
+  <p class="descr LES">Tomate natural, mozzarella fresca, hojas de albahaca y aceite de oliva</p>
+<p class="descr LUK">Fresh tomato, fresh mozzarella, basil leaves and olive oil</p>
+<p class="descr LFR">Tomate fraîche, mozzarella fraîche, feuilles de basilic et huile d'olive</p>
+</div>
+</div>
+
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish17.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">05</span><span class="price">5&nbsp;€</span></div>
+  <p class="menuitem plato LES">Tostada de aguacate</p>
+<p class="menuitem plato LUK">Avocado toast</p>
+<p class="menuitem plato LFR">Toast à l'avocat</p>
+  <p class="descr LES">Pan integral, aguacate, canónigos y croqueta de pollo</p>
+<p class="descr LUK">Whole wheat bread, avocado, lamb's lettuce and chicken croquette</p>
+<p class="descr LFR">Pain de blé entier, avocat, laitue d'agneau et croquette de poulet</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish25.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">06</span><span class="price">7,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Melón con jamón</p>
+<p class="menuitem plato LUK">Melon with ham</p>
+<p class="menuitem plato LFR">Melon avec jambon</p>
+  <p class="descr LES">Ensalada de jamón serrano y melón</p>
+<p class="descr LUK">Serrano ham and melon salad</p>
+<p class="descr LFR">Salade de jambon serrano et melon</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish18.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">07</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada de pimientos asados</p>
+<p class="menuitem plato LUK">Roasted pepper salad</p>
+<p class="menuitem plato LFR">Salade de poivrons grillés</p>
+  <p class="descr LES">Pimientos asados, cebolla, tomate, orégano</p>
+<p class="descr LUK">Roasted peppers, onion, tomato, oregano</p>
+<p class="descr LFR">Poivrons grillés, oignon, tomate, origan</p>
+  </div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish26.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">08</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Tostada mediterránea</p>
+<p class="menuitem plato LUK">Mediterranean toast</p>
+<p class="menuitem plato LFR">Toast méditerranéen</p>
+  <p class="descr LES">Pan integral, hummus, lechuga, zanahoria, queso de cabra, aceto balsámico</p>
+<p class="descr LUK">Whole wheat bread, hummus, lettuce, carrot, goat cheese, balsamic vinegar</p>
+<p class="descr LFR">Pain de blé entier, houmous, salade, carotte, fromage de chèvre, vinaigre balsamique</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish20.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">09</span><span class="price">5,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada de legúmbres</p>
+<p class="menuitem plato LUK">Beans salad</p>
+<p class="menuitem plato LFR">Salade de légumes</p>
+  <p class="descr LES">Lentejas, garbanzos y judías cocidas, cebolla, tomate, aceite de oliva</p>
+<p class="descr LUK">Lentils, chickpeas and cooked beans, onion, tomato, olive oil</p>
+<p class="descr LFR">Lentilles, pois chiches et haricots cuits, oignon, tomate, huile d'olive</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish21.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">10</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada mediterránea</p>
+<p class="menuitem plato LUK">Mediterranean salad</p>
+<p class="menuitem plato LFR">Salad méditerranéen</p>
+  <p class="descr LES">Tomates secos, naranja, pimientos, zanahoria, higos</p>
+<p class="descr LUK">Dried tomatoes, orange, peppers, carrots, figs</p>
+<p class="descr LFR">Tomates séchées, orange, poivrons, carottes, figues</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish11.png" alt="Ensalada" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">11</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada de salmón y aguacate</p>
+<p class="menuitem plato LUK">Salmon and Avocado Salad</p>
+<p class="menuitem plato LFR">Salade de saumon et d'avocat</p>
+  <p class="descr LES">Salmón ahumado, aguacate, maiz, lechuga, huevo y rabanito</p>
+<p class="descr LUK">Smoked salmon, avocado, corn, lettuce, egg and radish</p>
+<p class="descr LFR">Saumon fumé, avocat, maïs, laitue, œuf et radis</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish12.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">12</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Ensalada César</p>
+<p class="menuitem plato LUK">Caesar salad</p>
+<p class="menuitem plato LFR">Salade Cesar</p>
+  <p class="descr LES">Pollo, lechuga, huevo, salsa Worcestershire, anchoas, ajo, mostaza, queso parmesano</p>
+<p class="descr LUK">Chicken, lettuce, egg, Worcestershire sauce, anchovies, garlic, mustard, Parmesan cheese</p>
+<p class="descr LFR">Poulet, laitue, œuf, sauce Worcestershire, anchois, ail, moutarde, parmesan</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish16.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">13</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Bol de arroz y marisco</p>
+<p class="menuitem plato LUK">Bowl of rice and seafood</p>
+<p class="menuitem plato LFR">Bol de riz et fruits de mer</p>
+  <p class="descr LES">Arroz, mariscos y verduras salteadas</p>
+<p class="descr LUK">Rice, seafood and sauteed vegetables</p>
+<p class="descr LFR">Riz, fruits de mer et légumes sautés</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish14.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">14</span><span class="price">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Bol de arroz y carne</p>
+<p class="menuitem plato LUK">Bowl of rice and meat</p>
+<p class="menuitem plato LFR">Bol de riz et de viande</p>
+  <p class="descr LES">Arroz, carne y verduras salteadas</p>
+<p class="descr LUK">Rice, meat and sauteed vegetables</p>
+<p class="descr LFR">Riz, viande de mer et légumes sautés</p>
+</div>
+</div>
+
+<div class="menuitem lastline"></div>
+
+
+</div>
+<!--FIN CUADRO ENTRANTES-->
+<div><img src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="10" height="20" align="center" border="0" style="display:block"/>
+</div>
+
+<!--CUADRO DISHES-->
+<div class="menuitemcontainer">
+
+<div class="menuitem LES">Platos principales <i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LUK">Main Course <i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LFR">Plats principaux <i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish19.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">15</span><span class="price">13,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Caldereta de rape y marisco</p>
+<p class="menuitem plato LUK">Monkfish and seafood stew</p>
+<p class="menuitem plato LFR">Ragoût de lotte et fruits de mer</p>
+  <p class="descr LES">Rape, tomates, mariscos, cigalas, patatas y zanahoria</p>
+<p class="descr LUK">Monkfish, tomatoes, seafood, Norway lobsters, potatoes and carrots</p>
+<p class="descr LFR">Lotte, tomates, fruits de mer, langoustes, pommes de terre et carottes</p>
+  
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish02.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">16</span><span class="price">9,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Estofado de pollo</p>
+<p class="menuitem plato LUK">Chicken stew</p>
+<p class="menuitem plato LFR">Ragoût de poulet</p>
+  <p class="descr LES">Pollo, verduras, patatas y arroz blanco</p>
+<p class="descr LUK">Chicken, vegetables, potatoes and white rice</p>
+<p class="descr LFR">Poulet, légumes, pommes de terre et riz blanc</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish27.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">17</span><span class="price">11,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Fideuá</p>
+<p class="menuitem plato LUK">Fideua</p>
+<p class="menuitem plato LFR">Fideua</p>
+  <p class="descr LES">Paella de fideos con marisco y caldo de pescado</p>
+<p class="descr LUK">Noodle paella with seafood and fish broth</p>
+<p class="descr LFR">Paella de nouilles aux fruits de mer et bouillon de poisson</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish28.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">18</span><span class="price">10,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Paella de mariscos</p>
+<p class="menuitem plato LUK">Seafood paella</p>
+<p class="menuitem plato LFR">Paella fruits de mer</p>
+  <p class="descr LES">Paella de arroz con verdura y mariscos</p>
+<p class="descr LUK">Rice paella with vegetables and seafood</p>
+<p class="descr LFR">Paella de riz aux légumes et fruits de mer</p>
+</div>
+</div>
+
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish05.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">19</span><span class="price">8,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Pollo al horno</p>
+<p class="menuitem plato LUK">Baked chicken</p>
+<p class="menuitem plato LFR">Poulet au four</p>
+  <p class="descr LES">Pollo, verduras, champiñones y puré de patatas</p>
+<p class="descr LUK">Chicken, vegetables, mushrooms and mashed potatoes</p>
+<p class="descr LFR">Poulet, légumes, champignons et purée de pommes de terre</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish06.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">20</span><span class="price">8&nbsp;€</span></div>
+  <p class="menuitem plato LES">Patatas a la marinera</p>
+<p class="menuitem plato LUK">Seafood potatoes</p>
+<p class="menuitem plato LFR">Pommes de terre marinière</p>
+  <p class="descr LES">Guiso de patatas con pescado y mariscos</p>
+<p class="descr LUK">Potato stew with seafood</p>
+<p class="descr LFR">Ragoût de pommes de terre aux fruits de mer</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish07.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">21</span><span class="price">8&nbsp;€</span></div>
+<p class="menuitem plato LES">Salteado de carne y verduras</p>
+<p class="menuitem plato LUK">Sautéed meat and vegetables</p>
+<p class="menuitem plato LFR">Viande et légumes sautés</p>
+  <p class="descr LES">Cerdo y ternera, berenjena, pimientos, cebolla, zanahoria y arroz blanco</p>
+<p class="descr LUK">Pork and beef, eggplant, peppers, onion, carrot and white rice</p>
+<p class="descr LFR">Porc et veau, aubergine, poivrons, oignon, carotte et riz blanc</p>
+  </div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish08.png" alt=" "width=" "border="0" style="margin: 0 auto"></div><div><span class="dishnumber">22</span><span class="price">6,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Pollo frito</p>
+<p class="menuitem plato LUK">Fried chicken</p>
+<p class="menuitem plato LFR">Poulet frit</p>
+  <p class="descr LES">Pollo rebozado y frito con ensalada y arroz</p>
+<p class="descr LUK">Battered and fried chicken with salad and rice</p>
+<p class="descr LFR">Poulet pané et frit avec salade et riz</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish09.png" alt="Salmón" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">23</span><span class="price">7,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Salmón a la plancha</p>
+<p class="menuitem plato LUK">Grilled salmon</p>
+<p class="menuitem plato LFR">Saumon grillé</p>
+<p class="descr LES">Salmón, especias, arroz blanco</p>
+<p class="descr LUK">Salmon, spices, white rice</p>
+<p class="descr LFR">Saumon, épices, riz blanc</p></div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish10.png" alt="Bistec" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">24</span><span class="price">7&nbsp;€</span></div>
+  <p class="menuitem plato LES">Bistec a la pimienta con patatas</p>
+<p class="menuitem plato LUK">Pepper steak with french fries</p>
+<p class="menuitem plato LFR">Steak au poivron avec pommes de terre</p>
+<p class="descr LES">Bistec de ternera de primera calidad con salsa de pimienta y patatas fritas</p>
+<p class="descr LUK">Premium beef steak with pepper sauce and fries</p>
+<p class="descr LFR">Steak de boeuf de qualité supérieure avec sauce au poivre et frites</p></div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish15.png" alt="Hamburguesa" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">25</span><span class="price">6,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Hamburguesa completa</p>
+<p class="menuitem plato LUK">Special burger</p>
+<p class="menuitem plato LFR">Burger complet</p>
+  <p class="descr LES">Hamburguesa 300g, lechuga, tomate, cebolla, queso, pepinillo, huevo, fritas</p>
+<p class="descr LUK">300g hamburger, lettuce, tomato, onion, cheese, pickle, egg, fries</p>
+<p class="descr LFR">300g de hamburger, laitue, tomate, oignon, fromage, cornichon, œuf, frites</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish22.png" alt="Brochette" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">26</span><span class="price">6,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Brocheta mixta</p>
+<p class="menuitem plato LUK">Mixed skewer</p>
+<p class="menuitem plato LFR">Brochette mixte</p>
+  <p class="descr LES">Carnes de ternera, pollo, cerdo, tomates, pimientos y ensalada</p>
+<p class="descr LUK">Beef, chicken, pork, tomatoes, peppers and salad</p>
+<p class="descr LFR">Boeuf, poulet, porc, tomates, poivrons et salade</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish23.png" alt="Barbecue" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">27</span><span class="price">15&nbsp;€</span></div>
+<p class="menuitem plato LES">Parrillada</p>
+<p class="menuitem plato LUK">Barbecue</p>
+<p class="menuitem plato LFR">Barbecue</p>
+<p class="descr LES">Chuletas de cordero, ternera, costillas de cerdo, pollo, verduras</p>
+<p class="descr LUK">Lamb chops, veal, pork ribs, chicken, vegetables</p>
+<p class="descr LFR">Côtelettes d'agneau, veau, côtes de porc, poulet, légumes</p>
+</div>
+ 
+<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dish24.png" alt="Estofado" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">28</span><span class="price">8,50€</span></div>
+<p class="menuitem plato LES">Estofado de ternera</p>
+<p class="menuitem plato LUK">Beef Stew</p>
+<p class="menuitem plato LFR">Ragoût de bœuf</p>
+<p class="descr LES">Carne de ternera estofada, patatas, zanahorias, guisantes y de salsa de tomate</p>
+<p class="descr LUK">Braised beef, potatoes, carrots, peas, and ketchup</p>
+<p class="descr LFR">Boeuf braisé, pommes de terre, carottes, petits pois et ketchup</p>
+</div>
+</div>
+
+<div class="menuitem lastline"></div>
+
+
+</div>
+<!--FIN CUADRO DISHES-->
+<div><img src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt=""width="10" height="20" align="center" border="0" style="display:block"/>
+</div>
+
+<!--CUADRO POSTRES-->
+<div class="menuitemcontainer">
+
+<div class="menuitem LES">Postres <i class="fas fa-ice-cream" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LUK">Desserts <i class="fas fa-ice-cream" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LFR">Desserts <i class="fas fa-ice-cream" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess01.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P1</span><span class="price pricex3">3&nbsp;€</span></div>
+<p class="menuitem plato LES">Bola de helado</p>
+<p class="menuitem plato LUK">Ice cream ball</p>
+<p class="menuitem plato LFR">Boule de glace</p>
+<p class="descr LES">Diferentes sabores</p>
+<p class="descr LUK">Different flavors</p>
+<p class="descr LFR">Différentes saveurs</p>
+</div>
+ 
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess02.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P2</span><span class="price pricex3">4,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Bol 3 bolas de helado</p>
+<p class="menuitem plato LUK">Bowl 3 scoops of ice cream</p>
+<p class="menuitem plato LFR">Bol 3 boules de crème glacée</p>
+<p class="descr LES">Tres sabores a escoger en un bol de galleta</p>
+<p class="descr LUK">Three flavors to choose from in a cookie bowl</p>
+<p class="descr LFR">Trois saveurs au choix dans un bol à biscuits</p>
+</div>
+
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess13.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P3</span><span class="price pricex3">5&nbsp;€</span></div>
+<p class="menuitem plato LES">Sorbete de limón con cava</p>
+<p class="menuitem plato LUK">Lemon sorbet with cava</p>
+<p class="menuitem plato LFR">Sorbet au citron avec cava</p>
+<p class="descr LES">Copa de helado de limón servido con cava</p>
+<p class="descr LUK">Glass of lemon ice cream served with cava</p>
+<p class="descr LFR">Verre de glace au citron servi avec du cava</p>
+</div>
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess04.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P4</span><span class="price pricex3">4,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Tiramisu</p>
+<p class="descr LES">Porción</p>
+<p class="descr LUK">Portion</p>
+<p class="descr LFR">Portion</p>
+</div>
+ 
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess05.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P5</span><span class="price pricex3">4,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Tarta de chocolate y nata</p>
+<p class="menuitem plato LUK">Chocolate and cream cake</p>
+<p class="menuitem plato LFR">Gâteau au chocolat et à la crème</p>
+<p class="descr LES">Porción</p>
+<p class="descr LUK">Portion</p>
+<p class="descr LFR">Portion</p>
+</div>
+ 
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess06.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P6</span><span class="price pricex3">4&nbsp;€</span></div>
+<p class="menuitem plato LES">Cheesecake con arándanos</p>
+<p class="menuitem plato LUK">Cheesecake with blueberries</p>
+<p class="menuitem plato LFR">Cheesecake aux myrtilles</p>
+<p class="descr LES">Porción</p>
+<p class="descr LUK">Portion</p>
+<p class="descr LFR">Portion</p>
+</div>
+
+
+
+</div>
+
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess12.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P7</span><span class="price pricex3">3,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Tarta helada Oreo</p>
+<p class="menuitem plato LUK">Oreo icecream cake</p>
+<p class="menuitem plato LFR">Gâteau glacé Oreo</p>
+<p class="descr LES">Porción</p>
+<p class="descr LUK">Portion</p>
+<p class="descr LFR">Portion</p>
+</div>
+
+ 
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess08.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P8</span><span class="price pricex3">4,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Tarta de chocolate</p>
+<p class="menuitem plato LUK">Chocolate cake</p>
+<p class="menuitem plato LFR">Gâteau au chocolat</p>
+<p class="descr LES">Porción</p>
+<p class="descr LUK">Portion</p>
+<p class="descr LFR">Portion</p>
+</div>
+
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess09.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P9</span><span class="price pricex3">3,50&nbsp;€</span></div>
+<p class="menuitem plato LES">Lemon Pie</p>
+<p class="menuitem plato LUK">Lemon Pie</p>
+<p class="menuitem plato LFR">Tarte au citron</p>
+<p class="descr LES">Tartaleta</p>
+<p class="descr LUK">Tartlet</p>
+<p class="descr LFR">Tartelette</p>
+</div>
+
+</div>
+
+<div class="flexbox lista"><div class="layer show"></div>
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess07.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P10</span><span class="price pricex3">3&nbsp;€</span></div>
+<p class="menuitem plato LES">Bizcocho de vainilla</p>
+<p class="menuitem plato LUK">Vanilla biscuit</p>
+<p class="menuitem plato LFR">Biscuit à la vanille</p>
+<p class="descr LES">Porción con fresas y nata</p>
+<p class="descr LUK">Portion with strawberries and cream</p>
+<p class="descr LFR">Portion de fraises et de crème</p>
+</div>
+
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess10.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P11</span><span class="price pricex3">4,50&nbsp;€</span></div>
+  <p class="menuitem plato LES">Milhojas de chocolate y moka</p>
+<p class="menuitem plato LUK">Chocolate and mocha strudel</p>
+<p class="menuitem plato LFR">Strudel au chocolat et au moka</p>
+  <p class="descr LES">Láminas de chocolate rellenas de crema moca y fresas</p>
+<p class="descr LUK">Chocolate slices filled with mocha cream and strawberries</p>
+<p class="descr LFR">Tranches de chocolat fourrées à la crème de moka et aux fraises</p>
+</div>
+ 
+<div class="dish-3"><div class="dishphoto"><img src="https://akidaniel.github.io/menucatalina/imagenes/dess14.png" alt="" border="0" style="margin: 0 auto"></div><div><span class="dishnumber">P12</span><span class="price pricex3">3&nbsp;€</span></div>
+<p class="menuitem plato LES">Fruta de temporada</p>
+<p class="menuitem plato LUK">Season's fruit</p>
+<p class="menuitem plato LFR">Fruit de saison</p>
+</div>
+
+
+
+</div>
+
+<div class="menuitem lastline"></div>
+
+
+
+</div>
+<!--FIN CUADRO POSTRES--><div><img src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt=""width="10" height="20" align="center" border="0" style="display:block"/>
+</div>
+
+<!--CUADRO LISTA-->
+<div class="menuitemcontainer">
+
+<div class="menuitem LES">Bebidas <i class="fas fa-wine-glass-alt" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LUK">Drinks <i class="fas fa-wine-glass-alt" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LFR">Les boissons <i class="fas fa-wine-glass-alt" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+
+<div class="listado LES">
+<div class="flexbox"><div class="principal">Coca cola - Coca cola Light - Zero</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Ice Tea</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Fanta Naranja - Limón</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Shwepppes Naranja - Limón</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Agua</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Agua con gas</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Zumos de frutas</div><div class="principal preciolista" style="border:none">3&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Caña</div><div class="principal preciolista">1,30&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Pinta</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Jarra 1/2</div><div class="principal preciolista">2,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Jarra 1l</div><div class="principal preciolista">4&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Clara</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Estrella</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Alahambra</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel 0/0%</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Coronita</div><div class="principal preciolista">2,35&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Copa de vino</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Martini Bianco – Rosso</div><div class="principal preciolista">2,70&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal"  style="border:none">Sangría de vino 1l</div><div class="principal preciolista" style="border:none">3,50&nbsp;€</div></div>
+</div>
+
+<div class="listado LUK">
+<div class="flexbox"><div class="principal">Coca cola - Coca cola Light - Zero</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Ice Tea</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Fanta Orange - Lemon</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Shwepppes Orange - Lemon</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Water</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Soda water</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Fruit juice</div><div class="principal preciolista" style="border:none">3&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Beer glass</div><div class="principal preciolista">1,30&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Pint</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Beer Jar 1/2</div><div class="principal preciolista">2,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Beer Jar 1l</div><div class="principal preciolista">4&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Lemon Beer</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Estrella</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Alahambra</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel 0/0%</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Coronita</div><div class="principal preciolista">2,35&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Glass of wine</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Martini Bianco – Rosso</div><div class="principal preciolista">2,70&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal"  style="border:none">Wine sangria 1l</div><div class="principal preciolista" style="border:none">3,50&nbsp;€</div></div>
+</div>
+
+
+<div class="listado LFR">
+<div class="flexbox"><div class="principal">Coca cola - Coca cola Light - Zero</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Ice Tea</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Fanta Orange - Citron</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Shwepppes Orange - Citron</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Eau</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Eau gazeuse</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Jus de fruit</div><div class="principal preciolista" style="border:none">3&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Verre de bière</div><div class="principal preciolista">1,30&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Pinta</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Carafe 1/2</div><div class="principal preciolista">2,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Carafe 1l</div><div class="principal preciolista">4&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Panaché</div><div class="principal preciolista">1,75&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Estrella</div><div class="principal preciolista">1,80&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Alahambra</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Heineken</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">San Miguel 0/0%</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Coronita</div><div class="principal preciolista">2,35&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Verre de vine</div><div class="principal preciolista">2&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal">Martini Bianco – Rosso</div><div class="principal preciolista">2,70&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal"  style="border:none">Sangria au vin 1l</div><div class="principal preciolista" style="border:none">3,50&nbsp;€</div></div>
+</div>
+
+<div class="menuitem lastline LES LUK LFR"></div>
+
+</div>
+<!--FIN CUADRO LISTA-->
+
+<div><img src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="10" height="20" align="center" border="0" style="display:block"/>
+</div>
+<!--CUADRO CAFES-->
+<div class="menuitemcontainer">
+
+<div class="menuitem LES">Cafés <i class="fas fa-coffee" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LUK">Coffees <i class="fas fa-coffee" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+<div class="menuitem LFR">Les Cafés <i class="fas fa-coffee" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
+
+<div class="listado LES">
+<div class="flexbox"><div class="principal">Espresso</div><div class="principal preciolista">1,10&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Café americano</div><div class="principal preciolista">1,25&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Descafeinado</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Cortado</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Con leche</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Cacao</div><div class="principal preciolista">1,95&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal" style="border:none">Carajillo</div><div class="principal preciolista" style="border:none">1,90&nbsp;€</div></div>
+</div>
+<div class="listado LUK">
+<div class="flexbox"><div class="principal">Espresso</div><div class="principal preciolista">1,10&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">American coffee</div><div class="principal preciolista">1,25&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Decaf</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Espresso with milk</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Coffee with milk</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Chocolate</div><div class="principal preciolista">1,95&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal" style="border:none">Carajillo</div><div class="principal preciolista" style="border:none">1,90&nbsp;€</div></div>
+</div>
+<div class="listado LFR">
+<div class="flexbox"><div class="principal">Espresso</div><div class="principal preciolista">1,10&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Café américain</div><div class="principal preciolista">1,25&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Décaféiné</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Noisette</div><div class="principal preciolista">1,20&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Café crème</div><div class="principal preciolista">1,50&nbsp;€</div></div>
+<div class="flexbox"><div class="principal">Chocolat</div><div class="principal preciolista">1,95&nbsp;€</div></div>
+<div class="flexbox" ><div class="principal" style="border:none">Carajillo</div><div class="principal preciolista" style="border:none">1,90&nbsp;€</div></div>
+</div>
+
+<div class="menuitem lastline LES LUK LFR"></div>
+
+</div>
+<!--FIN CUADRO CAFES--></div>
+
+<div class="menudevinos">
+<div class="cartadevinos TITLE">
+<header id="LES" class="SUBTITULO bebidas LES" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Carta de vinos</header>
+<header id="LUK" class="SUBTITULO bebidas LUK" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Wine List</header>
+<header id="LFR" class="SUBTITULO bebidas LFR" style="color: #803a30; font-family: 'Berkshire Swash', cursive;">Carte de Vins</header>
+</div>
+<div class="cartadevinos">
+<div class="menuitem topimage LES LUK LFR" style="background-image: url(https://akidaniel.github.io/menucatalina/imagenes/vinos.jpg); height:250px; "></div>
+
+</div>
+
+
+
+<div class="address">C/ Angosto, 18 - 23520 - Begíjar <i class="fas fa-phone-alt"></i> 716 038 056 <i class="fab fa-whatsapp"> 611 111 111</i>
+</div>
+
+<div><img src="https://rawgit.com/akidaniel/PORTFOLIO/gh-pages/imagenes/iconos/BLANK.gif" alt="" width="10" height="150" align="center" border="0" style="display:block"/>
+</div>
+
+<script type="text/javascript">
+$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+var amountScrolled = 300;
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+</script>
+
+</div>
+
+</body>
+</html>
