@@ -23,7 +23,7 @@ text-align:left;
 
 .pagina {box-sizing:border-box;
 padding:0;
-background:url(https://akidaniel.github.io/menucatalina/imagenes/fondo.jpg)}
+background:url(https://images.assetsdelivery.com/compings_v2/ihor_seamless/ihor_seamless1502/ihor_seamless150200211.jpg)}
  
 .wrapper {overflow-x:hidden; position: relative; padding: 0 3px;}
 
@@ -36,12 +36,10 @@ background:url(https://akidaniel.github.io/menucatalina/imagenes/fondo.jpg)}
 
 /*TEXTOS*/
 
-.SUBTITULO{font-family: 'Almendra', serif;
-font-size:3rem;
+.SUBTITULO{font-size:3rem;
+margin:3rem 0 1rem 0;
 text-align:center;
-line-height: 2.5rem;
-margin: 0 0 1rem;
-font-weight: bold;}
+line-height: 3rem;}
 
 
 /*FIN TEXTOS*/
@@ -58,47 +56,37 @@ width:100%;}
 
 /*BOTON SOCIAL*/
 .FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS {
-text-indent: unset;
-border: 0.15rem solid #864138;
-border-radius: 8px;
-font-family: "Font Awesome 5 Brands";
-display: inline-block;
-padding-right: 3px;
-color: #864138;
-text-decoration:none;
-font-size: 36px;
-line-height: 50px;
-display: inline-block;
-font-style: normal;
-font-variant: normal;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
-margin: 0 0.25rem;
-    width: 3rem;
+display:block;
+text-indent:-625rem;
+width:3.125rem;
+height:3.125rem;
+background-repeat:no-repeat;
+cursor: pointer;
+background-size:contain;
+margin: 0 15px;
+}
+.HOME {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_fcbk.png)}
+
+.BACK {background-image: url(https://rawgit.com/akidaniel/darezd/gh-pages/imagenes/ICONOS/BT_X2.svg)}
+
+.FCBK {
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_fcbk.png);
 }
 
-.FCBK:before {
-    content: "\f39e";
-    padding: 0 14px;
+.TWITTER {
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_twit.png);
 }
 
-.TWITTER:before {
-    content: "\f099";
-    padding: 0 9px;
+.INSTA {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_insta.png)
 }
 
-.WHATS:before {
-    content: "\f232";
-    padding: 0 11px;
+.MAIL {
+background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_mail.png);
 }
 
-.MAIL:before {
-	font-family: "Font Awesome 5 Free";
-    content: "\f0e0";
-    padding: 0 8px;
-	font-weight: 900;
-}
 
+.WHATS {background-image: url(https://akidaniel.github.io/menu_base/imagenes/bt_whatsapp.png);
+}
 /*BOTON TEXT ME*/
 .text-me {
 	display: block;
@@ -114,14 +102,14 @@ margin: 0 0.25rem;
 /*BOTON BACK TO TOP*/
 .back-to-top {
 	display: none;
-	width: 4.75rem;
-	height: 4.75rem;
+	width: 3.75rem;
+	height: 3.75rem;
 	text-indent: -9999px;
 	position: fixed;
-	z-index: 1500;
-	right: 0.5rem;
-	bottom: 0rem;
-	background: url(https://akidaniel.github.io/menucatalina/imagenes/bt_top.png) no-repeat center 43%;
+	z-index: 1200;
+	right: 1.25rem;
+	bottom: 0.5rem;
+	background: url(https://akidaniel.github.io/menu_base/imagenes/bt_top.png) no-repeat center 43%;
 	background-size: contain;
 }
 
@@ -160,100 +148,76 @@ z-index: 9500;
 margin:2rem 0 1rem 0;
 width:100%;}
 
-.menuitemcontainer, .cartadevinos, .cartadepostres {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px; }
-.menuitem { font-family: 'Almendra', serif; font-weight: bold;
+.menuitemcontainer, .cartadevinos {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px; }
+.menuitem { font-family: 'Berkshire Swash', cursive;
  font-size: 24px; color: #803a30; text-align: center; padding: 8px 0 10px 0; border-bottom: 2px solid #afafaf; margin: 0 auto; 
 }
 
-/**.menuitembeer {font-family: 'Almendra', serif; font-weight: bold; display:flex!important;
- font-size: 24px; color: #803a30; text-align: center; padding: 8px 0 10px 0; border-bottom: 2px solid #afafaf; margin: 0 auto; justify-content: center;}	
-.cartadevinos, .cartadepostres {display:none;}**/
+	
+.cartadevinos {display:none;}
+.bebidas  {marging: 0rem!important; margin-top:-2.5rem!important;}
 
-.ultimalinea {border:none}
-.menudevinos, .menudepostres {display:none}
-.bebidas, .desserts  {marging: 0rem!important; margin-top:-2.5rem!important;}
-
-
-.topimage {background-position: center center; -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius:10px; -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius:10px; border-bottom: 1px solid #BE9A91; padding: 0.5rem 0 0; margin-bottom: 1rem;}
-.topimage img {float:left; margin: 0 0.5rem 0.5rem 0; }
-
+.topimage {background-position: center center; -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius:10px; -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius:10px;}
 .principal {
+background: ;
 flex: 1;
-font-family: 'Almendra', serif;
+font-family: 'Yantramanav', sans-serif;
 font-size:18px;
-padding: 5px 5px 2px 5px; border-bottom: 2px dotted #ccc;
-color:#454545;
+  padding: 5px 5px 2px 5px; border-bottom: 2px dotted #ccc;
+  color:#454545;
 }
 
-.ultimalinea {border:none}
-
-
-
-.dish-2 {text-align: center; margin: 1.5rem auto 0; width:49%; z-index:10;}
-.dish-3 {text-align: center; margin: 1.5rem auto 0; width:32%; z-index:10;}
+.dish-2 {text-align: center; margin-top: 15px; width:49%; z-index:10;}
+.dish-3 {text-align: center; margin-top: 5px; width:32%; z-index:10;}
 .dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%;}
-.destacado {font-family: 'Almendra', serif;
-text-align:left;
-font-size:17px; font-weight: normal;}
-.descr {font-family: 'Gothic A1', sans-serif; font-weight: normal; color: #000000;
-font-size:14px; text-align:center; margin: 10px 3px 0; line-height: 125%;
+.descr {font-family: 'Yantramanav', sans-serif;
+font-size:18px; text-align:center; margin: 10px 3px 0; line-height: 125%;
+
 }
-.tabla {padding: 8px 5px 4px;
-    margin: 0;}
+
+.numeroyprecio {display: flex;
+    justify-content: space-between; margin: 0 6px 0px 10px;}
 	
 .menuitem.plato {font-size:20px; border-bottom: none; line-height: 100%; padding:0;}
 .price {position: relative;
- font-family: 'Almendra', serif;
-
- font-size: 18px; /*width:fit-content;-moz-border-radius: 20px;
+ font-family: 'Yantramanav', sans-serif;
+ font-size: 18px; /*-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    padding: 4px 10px;
-    background-color: #7B7E97;
-    font-weight: bold; bottom: 15px; color: white;
-    
-   
-    left: 60%;
+     width: 50px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    bottom: 15px;
+padding: 0px 10px 10px;
  display: block;
-    width: 50px; text-align: unset;*/right:10%;
-   }
-   
 
+    text-align: right;*/}
 	
+.expandish .price {display:unset; width: 60px;}
 	
-.dishphoto {text-align:center!important}
+.dishphoto {text-align:center}
 
-.pricex3 {left: 30%; margin: 0 auto; position:unset;}
-.address {font-family: 'Gothic A1', sans-serif;
- font-size: 15px; text-align: center; margin: 0 auto; line-height: 1.25rem;}
+.pricex3 {left: 30%; margin: 0 auto;}
+.address {font-family: 'Yantramanav', sans-serif; font-size: 14px; text-align: center; margin: 15px auto}
 .lastline {border:none; text-align:center; margin-bottom: 0.5rem;}
 
 .dishnumber {position: relative;
-    font-family: 'Gothic A1', sans-serif;
-
-    font-size: 16px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    padding: 2px 6px;
-   background-color: white;  bottom: 15px;
+    padding: 4px 6px;
+   background-color: white;  bottom: 10px;
     font-weight: bold;
     color: black;
-    bottom:0.22rem;;
+    
 }
-
-.numeroplato {
-    text-align: left;
-    display: flex;
-    justify-content: space-around;
-}
-.numeroplato .price {right:unset;}
-
 .dishnumber::after {position:relative; 
 		  content: "\2617"; color:blue; margin-left: -1.5em; z-index:-9999; display:none;
 }
 
-	
 
 /*LANGUE*/
 .BOTONERA, .cambiocontenido {display: -webkit-box;
@@ -266,25 +230,17 @@ width:100%;
 position:relative;
 }
 .cambiocontenido {position: fixed;
-    bottom: 0rem;
-    z-index: 990; 
-	direction: rtl;
-    justify-content: flex-start;
-	right: 5rem;
-    }
-	
-
-	
-#cambiocontenido {transition: bottom 0.3s;}	
+    bottom: 0.5rem;
+    z-index: 990; justify-content: left;}
 #LES {display:block;}
-.LUK, .LFR, .CAT {display:none;}
+.LUK, .LFR {display:none;}
 .LES {display:block;}
 
 .menu_lang, .menu_contenido {display: none;}
 .menu_lang:checked ~ label .BUTTON {color: #c2c;}
 .menu_contenido:checked ~ label .BUTTON {color: #c2c;}
 
-.UK, .ES, .FR, .CT {
+.UK, .ES, .FR {
 display:block;
 text-indent:-625rem;
 width:4rem;
@@ -294,70 +250,48 @@ background-size:contain;
 cursor: pointer;
 margin: 0 2rem;
 z-index:222;}
-.UK {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/uk.png);}
-.ES {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/spain.png);}
-.FR {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/france.png);}
-.CT {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/catalan.png);}
+.UK {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/uk.png);}
+.ES {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/spain.png);}
+.FR {background-image: url(https://rawgit.com/akidaniel/avataretes/gh-pages/FOTOS/GENERAL/france.png);}
 
-.platos, .vinos, .postres {display: block;
-	width: 4.5rem;
-	height: 4.5rem;
+.platos, .vinos {display: block;
+	width: 4rem;
+	height: 4rem;
 	text-indent: -9999px;
 	/**position: fixed;**/
 	z-index: 999;
 	cursor: pointer;
 }
-.platos {background: url(https://akidaniel.github.io/menucatalina/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
-.vinos {background: url(https://akidaniel.github.io/menucatalina/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
-.postres {background: url(https://akidaniel.github.io/menucatalina/imagenes/dess_icon.png) no-repeat center 43%; background-size: contain;}
-
-.dish-2 div {text-align: right;}
-
-
+.platos {background: url(https://akidaniel.github.io/menu_base/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
+.vinos {background: url(https://akidaniel.github.io/menu_base/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
 
 .expandish {
 background-color:#ffffff;
 position: absolute;
 min-width: 580px;
 max-width: 580px;
+/**-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;**/
 border:solid 2px #B5B5B5;
 cursor: zoom-out;
 margin: 0;
 z-index: 12;
-padding-bottom: 1rem;
 }
 
-.expandish img {width: 300px; /**padding: 15px 0 0 0;**/}
+.expandish img {width: 300px; padding: 15px 0 0 0;}
 
-	
-.expandish .pricex3 {left:20%; position: relative;}
 
-.expandish .dishphoto {margin: 15px 0 -10px; text-align: center;}
+.expandish .pricex3 {margin:0;}
+
+.expandish .dishphoto {margin: 15px 0 -10px;}
 
 
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;}
-
-.-L {text-align:left;}
-.-C {text-align:center!important; }
-.cartadevinos.TITLE, .cartadepostres.TITLE {margin: 6rem auto 0;}
-.wine {text-align: center!important;}
-.wine img {height: 230px; padding:0}
-.expandish .wine img {width:unset; height: unset; }
-.expandish .-C .price {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
-.expandish .-C .pricex3 {line-height: 180%; margin-left: 10rem; left:unset; right:unset;}
-.expandish .-C {margin-top: -8rem;}
-.expandish .fa-wine-glass-alt {left: 10rem; position: relative;}
-.expandish .wine {text-align: left!important; margin-left: 3rem!important;}
-.expandish .-C p {margin-left: 10rem;}
-.expandish .-C .descr {padding: 0 0 10px 0;}
-
-
-.FINDUS {top:0;}
-a.FINDUS {text-decoration: none;}
-
-/**ALERGENOS**/
+	
+	/**ALERGENOS**/
 .alergenos {display:none; justify-content: left;
     width: 100%;
     position: absolute; visibility:hidden}
@@ -476,24 +410,13 @@ line-height: 0%; font-size:12px; text-align:center; color:#803a30; font-weight:b
    width:100%;
    left:0;
     }
-/**.pescado:before{
-    position: absolute;
-    top: 0;
-    font-size: 24px;
-	padding: 0 3px;
-	font-family: "Font Awesome 5 Free";
-    content: "\F578";
-	color:#ffffff;
-	line-height: 160%;
-   
-    }**/
-
 @media only screen and (max-width: 900px) {
 
+.SUBTITULO {margin-top: 4rem;}
 .menuitemcontainer { -moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; }
-.UK, .ES, .FR, .CT {margin: 0 1rem; width: 3rem; height:5rem;}
+.UK, .ES, .FR {margin: 0 1rem; width: 3rem; height:5rem;}
 .BOTONERA {top: 4.15rem;}
-.expandish {min-width: 98%;}
+.expandish {min-width: 98%; padding-bottom: 30px;}
 /**FONDO DE COLOR**/
 .layer {background-color: rgba(134, 65, 56, 0.7);
     position: absolute;
@@ -507,27 +430,14 @@ line-height: 0%; font-size:12px; text-align:center; color:#803a30; font-weight:b
 
 
 	
-/**.price {left:30%}
-.expandish .price {display: unset;}
-.pricex3 {left:unset; line-height: 140%;}**/
 
 .dish-3 .dishnumber {left:0;}
-
+.pricex3 {left:5%;}
 .expandish .dishnumber {color: #ffffff; background-color: #000000;}
-
 .bebidas  {marging: 0rem!important; margin-top:0rem;}
 .TITLE {-moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;}
-.menuitemcontainer .pricex3 {line-height:unset;}
-
-.cambiocontenido {
-    justify-content: flex-end;
-	right:unset;
-    }
-.FINDUS {top:0;}
-
-.topimage img {float: right; margin: 0 0 0.5rem 0.5rem.descr;}
 }
 
 @media only screen and (min-width:901px) {
@@ -537,7 +447,7 @@ line-height: 0%; font-size:12px; text-align:center; color:#803a30; font-weight:b
 top:172px;
 margin-right: 5px;
 width:60px;
-left:90%;
+left:85%;
 right: 0;
 margin-left: 0px;
 display: block;
